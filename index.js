@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 connectToMongo();
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Hello Worl");
 });
 app.use('/auth',require('./routes/auth'));
 app.use('/notes',require('./routes/notes'));       // Routes Using express Router 
