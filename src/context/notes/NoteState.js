@@ -8,7 +8,7 @@ const NoteState=(props)=>{
     const FetchNote=async()=>{
       // API call of backend 
       console.log("Running Fetch")
-      const url="/notes/fetchallNotes";
+      const url="https://ghyaabackend.onrender.com/notes/fetchallNotes";
       const response = await fetch(url, {
         method: "GET", 
         headers: {
@@ -27,7 +27,7 @@ const NoteState=(props)=>{
     // Adding note in backend 
     const addNoteBackend=async(title,description)=>{
       console.log("AddingNote");
-      const url="/notes/addNotes";
+      const url="https://ghyaabackend.onrender.com/notes/addNotes";
       const response = await fetch(url, {
         method: "POST", 
         headers: {
@@ -49,7 +49,7 @@ const NoteState=(props)=>{
      // To delete Note from Backend  
     const deleteNoteBackend=async(id)=>{
       console.log("Deleting Note");
-      const url=`/notes/deleteNotes/${id}`;
+      const url=`https://ghyaabackend.onrender.com/notes/deleteNotes/${id}`;
       const response = await fetch(url, {
         method: "DELETE", 
         headers: {
@@ -68,7 +68,7 @@ const NoteState=(props)=>{
      // To edit Note from Backend
     const editNoteBackend=async (title,description,id)=>{
       console.log("Editing Note");
-      const url=`/notes/updateNotes/${id}`;
+      const url=`https://ghyaabackend.onrender.com/notes/updateNotes/${id}`;
       const response = await fetch(url, {
         method: "PUT", 
         headers: {
